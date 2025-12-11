@@ -1,13 +1,6 @@
-# ComfyUI Loader Utils - Optimized Model Loading
+# ComfyUI Loader Utils - Adjust Model Loading Order
 
-## The Problem: Native ComfyUI Loading and VRAM OOM Issues
-
-ComfyUI's native loading mechanism has a significant limitation that affects users with limited VRAM: **all models are loaded into VRAM before the workflow begins execution**. This approach causes several issues:
-
-- **VRAM Overflow**: All models are loaded simultaneously, consuming excessive GPU memory
-- **Unnecessary Loading**: Even models not needed for the current execution are loaded
-- **OOM Errors**: Users with limited VRAM experience crashes and out-of-memory errors
-- **Inefficient Resource Management**: No control over the loading order or timing
+## The Problem: Comfyui load models at the start
 
 ## The Solution: Loader Nodes with "Any" Parameter
 
