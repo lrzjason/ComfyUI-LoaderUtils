@@ -40,7 +40,6 @@ This custom loader module addresses these issues by:
 
 - **Reduced Memory Footprint**: Load models only when needed
 - **Flexible Sequencing**: Arrange loading order based on available memory
-- **Avoid OOM Errors**: Control when memory-intensive models are loaded
 - **Improved Workflow Stability**: More predictable memory usage
 
 ## Usage
