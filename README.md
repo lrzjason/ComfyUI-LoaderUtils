@@ -1,8 +1,8 @@
 # ComfyUI Loader Utils - Adjust Model Loading Order
 
-## The Problem: Comfyui load models at the start
+## The Problem: Comfyui load models at the start at once
 
-## The Solution: Loader Nodes with "Any" Parameter
+Solution: Added an optional "Any" Parameter to loader node
 
 This custom loader module addresses these issues by:
 
