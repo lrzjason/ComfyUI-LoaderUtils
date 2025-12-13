@@ -61,8 +61,6 @@ The key advantage of these loader nodes is that you can control WHEN models are 
 1. The UNETLoader_Any is connected after the CLIPTextEncode nodes, allowing them to run before the heavy UNET model is loaded
 2. The VAELoader_Any is connected after sampling, allowing you to load the VAE only when needed for decoding
 
-This approach prevents all models from being loaded simultaneously, which was the root cause of VRAM OOM errors in standard ComfyUI usage.
-
 Simply use these nodes in place of the standard loader nodes, and strategically connect them to control when models are loaded into memory.
 
 ## Contact
